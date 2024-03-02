@@ -13,10 +13,11 @@
 }
 
 .dropdown{
-  background-color: white;
+  background-color: white;/* Background color */
   display: flex;
   flex-direction: column;
   border: 1px solid gray;
+  width: 300px;
 }
 
 .dropdown:empty{
@@ -33,6 +34,7 @@ input{
   font-size: 20px;
   width: 500px;
   padding: 12px 20px;
+  border: none;
 }
 
 .search-inner{
@@ -48,6 +50,44 @@ input{
 }
 
 .search-icon{
-  padding: 12px 20px;
-  font-size: 18px;
+  padding: 16px 20px;
+  font-size: 25px;
+  border: 1px;
+  color: white;
+  background-color: orange;/* Background color */
+}
+
+.All-icon{
+  background-color: #fff; /* Background color */
+  color: #333; /* Text color */
+  border: 1px solid #ccc; /* Border */
+  padding: 16px 20px; /* Padding */
+  cursor: pointer; /* Cursor style */
+  display: flex; /* Make the button flex container */
+  align-items: center; /* Center items vertically */
+  
+}
+
+.All-icon:hover {
+  background-color: #f0f0f0; /* Hover background color */
+}
+
+.dropdown-row:hover {
+  background-color: #f0f0f0; /* Hover background color */
+}
+
+
+.all-dropdown {
+  display: none; /* Initially hide the dropdown */
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  z-index: 1;
+}
+
+.all-dropdown.show {
+  display: block; /* Show the dropdown when the 'show' class is applied */
 }
